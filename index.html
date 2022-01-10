@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Domowy budżet</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <script
+      src="https://kit.fontawesome.com/778df21874.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo row">
+        <h1>Domowy <i class="fas fa-money-bill-wave fa-2x"></i> Budżet</h1>
+      </div>
+
+      <div class="info row">
+        <!-- <h2>Informacja o tym ile można wydać</h2> -->
+      </div>
+
+      <div class="money row">
+        <div class="row col-md incom">
+          <div class="incometitle">
+            <h2>Przychody</h2>
+          </div>
+
+          <div class="input">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="inputincome"
+                placeholder="Nazwa przychodu"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="inputvalue"
+                aria-label="Amount (to the nearest dollar)"
+                placeholder="Kwota"
+              />
+            </div>
+            <button type="button" id="addincome" class="btn btn-success">
+              Dodaj
+            </button>
+          </div>
+
+          <div class="divlist">
+            <ul id="listIncome" class="list-group"></ul>
+          </div>
+
+          <div class="sumincom"></div>
+        </div>
+
+        <div class="row col-md expenses">
+          <div class="expensetitle">
+            <h2>Wydatki</h2>
+          </div>
+          <div class="inputexpense">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="inputexpense"
+                placeholder="Nazwa wydatku"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="inputexpensevalue"
+                aria-label="Amount (to the nearest dollar)"
+                placeholder="Kwota"
+              />
+            </div>
+            <button type="button" id="addexpense" class="btn btn-danger">
+              Dodaj
+            </button>
+          </div>
+          <div class="divlist">
+            <ul id="expensesList" class="list-group"></ul>
+          </div>
+          <div class="sumexpenses"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/index1.js"></script>
+    <!-- <script src="script/expense.js"></script> -->
+  </body>
+</html>

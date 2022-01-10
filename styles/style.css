@@ -1,0 +1,185 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e7ecf5;
+}
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    border: 0.5px solid grey;
+    border-radius: 8px;
+}
+.logo {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    padding-top: 20px;
+}
+.info {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+}
+.fas {
+    color: darkgreen;
+}
+.money {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.incom {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+#inputincome {
+    width: 75%;
+    margin: 10px 0;
+}
+#inputvalue {
+    width: 75%;
+}
+#addincome {
+    width: 50%;
+    margin: 10px;
+}
+#addincome:focus {
+    outline: none;
+    box-shadow: none;
+}
+#addincome:active {
+    color: green;
+    background-color: white;
+}
+.incometitle {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+.textLi {
+    display: flex;
+    align-self: center;
+}
+.btn {
+    margin-right: 10px;
+}
+.editInputIncome:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.list-group-item {
+    animation-duration: 1.5s;
+    animation-name: show;
+}
+.divlist {
+    margin-bottom: 20px;
+}
+.edit-Div {
+    display: flex;
+}
+.expenses {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#addexpense {
+    background-color: #821b1d;
+}
+#addexpense:focus {
+    outline: none;
+    box-shadow: none;
+}
+#addexpense:active {
+    color: #821b1d;
+    background-color: white;
+}
+.inputexpense {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#inputexpense {
+    width: 75%;
+    margin: 10px 0;
+}
+#inputexpensevalue {
+    width: 75%;
+}
+#addexpense {
+    width: 50%;
+    margin: 10px;
+}
+.expensetitle {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+.contentExpense {
+    display: flex;
+    justify-content: space-between;
+}
+.inputexpense {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.editDivExpense {
+    display: flex;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 0 0;
+    }
+    .money {
+        display: flex;
+        align-items: baseline;
+    }
+    #li {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        animation-duration: 1s;
+        animation-name: slidein;
+    }
+      @keyframes show {
+        from {
+            opacity: 0%;
+    
+        }
+        to {
+            opacity: 100%;
+        }
+}
